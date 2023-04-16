@@ -7,10 +7,17 @@
             "Alirezaabdolmaleki\\About\\": "src/"
         }
     },
+
+
+    "homepage": "https://github.com/tboronczyk/testlib",
+    "license": "WTFPL",
+
+
     "authors": [
         {
             "name": "alireza abdolmaleki",
-            "email": "alirezaabdolmaleki9080@gmail.com"
+            "email": "alirezaabdolmaleki9080@gmail.com",
+            "homepage": "https://github.com/alirezaabdolmaleki"
         }
     ],
     "require": {
