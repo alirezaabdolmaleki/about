@@ -50,5 +50,5 @@
         "test-dev": "vendor/bin/phpunit --coverage-html coverage --coverage-text"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": false
 }
