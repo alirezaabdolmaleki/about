@@ -1,18 +1,7 @@
 {
     "name": "alirezaabdolmaleki/about",
-    "description": "about alireza abdolmaleki",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Alirezaabdolmaleki\\About\\": "src/"
-        }
-    },
-
-
-    "homepage": "https://github.com/alirezaabdolmaleki/about",
-    "license": "WTFPL",
-
-
+    "description": "this is test",
+    "license": "MIT",
     "authors": [
         {
             "name": "alireza abdolmaleki",
@@ -20,10 +9,44 @@
             "homepage": "https://github.com/alirezaabdolmaleki"
         }
     ],
+    "homepage": "https://github.com/alirezaabdolmaleki/about",
+    "keywords": [
+        "alireza abdolmaleki"
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "illuminate/support": "^7.0|^8.0|^9.0",
         "guzzlehttp/guzzle": "^6.3|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0",
+        "mockery/mockery": "^1.3.3",
+        "orchestra/testbench": "~3.8.0|^4.0|^5.0|^6.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "alirezaabdolmaleki\\about\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "alirezaabdolmaleki\\about\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "alirezaabdolmaleki\\about\\AboutServiceProvider"
+            ],
+            "aliases": {
+                "Payment": "alirezaabdolmaleki\\about\\Facades\\Payment"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --exclude-group external",
+        "test-coverage": "vendor/bin/phpunit --coverage-clover coverage.xml",
+        "test-dev": "vendor/bin/phpunit --coverage-html coverage --coverage-text"
     }
-
 }
