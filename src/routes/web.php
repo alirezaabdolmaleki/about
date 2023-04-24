@@ -2,6 +2,6 @@
 namespace alirezaabdolmaleki\about\routes;
 use Illuminate\Support\Facades\Route;
 
-Route::get('ing', function () {
-    return "alireza ing";
+Route::get('about', function () {
+    return "made by alireza abdolmaleki";
 });

@@ -1,6 +1,6 @@
 <?php
 
-namespace alirezaabdolmaleki\about;
+namespace Alirezaabdolmaleki\About;
 
 use Illuminate\Support\ServiceProvider;
 
