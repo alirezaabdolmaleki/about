@@ -1,32 +1,42 @@
 {
     "name": "alirezaabdolmaleki/about",
-    "description": "this is test",
+    "description": "test",
     "license": "MIT",
-    "authors": [
+    "repositories": [
         {
-            "name": "alireza abdolmaleki",
-            "email": "alirezaabdolmaleki9080@gmail.com",
-            "homepage": "https://github.com/alirezaabdolmaleki"
+            "type": "path",
+            "url": "https://github.com/alirezaabdolmaleki/about"
         }
     ],
-    "homepage": "https://github.com/alirezaabdolmaleki/about",
-    "keywords": [
-        "alireza abdolmaleki"
-    ],
-
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "php": "^7.3|^8.0"
-    },
-    "require-dev": {
-
-    },
     "autoload": {
         "psr-4": {
             "Alirezaabdolmaleki\\About\\": "src/"
         }
+    },
+
+    "require": {
+
+        "php": ">=8.0.0"
+
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+
+
+
+    "extra": {
+
+        "laravel": {
+            "providers": [
+                "Alirezaabdolmaleki\\Alaabi\\AboutServiceProvider"
+            ]
+        }
     }
-
-
 }
